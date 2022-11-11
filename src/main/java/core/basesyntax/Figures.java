@@ -1,14 +1,18 @@
 package core.basesyntax;
 
-public abstract class Figures {
+public abstract class Figures implements Getable, Drawable{
 
     private String color;
     private float area;
 
     public Figures(){}
-    public Figures(String color, float area){
+    public Figures(String color){
         this.color = color;
-        this.area = area;
     }
-
+    public String getColor() {
+        return color;
+    }
+    public void setColor(String color) {
+        this.color = color;
+    }
 }
