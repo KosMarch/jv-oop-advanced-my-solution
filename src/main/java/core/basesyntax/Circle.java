@@ -1,8 +1,6 @@
 package core.basesyntax;
 
-import javax.swing.*;
-
-public class Circle extends Figures {
+public class Circle extends Figure {
 
     private final int radius;
     public Circle(String color, int radius){
